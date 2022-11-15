@@ -15,6 +15,7 @@ createEffect(async () => {
   console.log(json.pets);
 });
 
+
 function App() {
   return (
     <div class="container">
@@ -27,7 +28,7 @@ function App() {
    
   );
 }
-
+export {pets}
 export default App;
 
 
@@ -35,4 +36,9 @@ export default App;
 1.We have import Routes and Route components from solid-app-router library
 2. We then import Home and LinkedPet components and pass them to element props.
   ** For home route URL, We have passed the end props to match the / with exactly route
+
+
+3. We imported createEffect and createSignal and then wrapped the fetch API with createEffect to run only once 
+  then we passed the pet array to setPets signal.
+  then export pets, SolidJs signals can be exported to any other component to use
 */
