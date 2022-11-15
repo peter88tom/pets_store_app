@@ -7,3 +7,5 @@ const LikedPets = () => {
 		</div>
 	);
 }
+
+export default LikedPets;
