@@ -16,3 +16,10 @@ function App() {
 }
 
 export default App;
+
+
+/*
+1.We have import Routes and Route components from solid-app-router library
+2. We then import Home and LinkedPet components and pass them to element props.
+  ** For home route URL, We have passed the end props to match the / with exactly route
+*/
