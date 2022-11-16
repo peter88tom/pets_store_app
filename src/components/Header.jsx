@@ -7,9 +7,11 @@ const Header = () =>{
 	return (
 		<div>
 			<h2>List of Awesome Pets</h2>
-			<For each={ pets() }>
-				{(pet => <PetCard pet={pet} /> )}
-			</For>
+			<div class="row">
+				<For each={ pets() }>
+					{(pet => <PetCard pet={pet} /> )}
+				</For>
+			</div>
 		</div>
 	)
 	
